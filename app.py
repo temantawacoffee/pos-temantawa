@@ -77,13 +77,13 @@ def login():
             username = st.text_input("Username")
             password = st.text_input("Password", type="password")
             if st.button("Masuk Sistem", use_container_width=True):
-                if username == "admin" and password == "admin123":
+                if username == "admin" and password == "admin1526":
                     st.session_state['logged_in'] = True
                     st.session_state['username'] = "admin"
                     st.session_state['role'] = "Admin"
                     st.success("Login Admin Berhasil!")
                     st.rerun()
-                elif username == "kasir" and password == "kasir123":
+                elif username == "kasir" and password == "kasir1526":
                     st.session_state['logged_in'] = True
                     st.session_state['username'] = "kasir"
                     st.session_state['role'] = "Kasir"
